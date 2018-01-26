@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">VkfMobil</string>
+    <string name="APP_LOG_CAT_NAME">WEBSERVICE</string>
+    <string name="httpCallTimeout">20000</string>
+    <string name="BrokenData">hata var</string>
+    <string name="defaultLongitude">0.0</string>
+    <string name="defaultLatitude">0.0</string>
+    <string name="Ok">Tamam</string>
+    <string name="secizle">Seç İzle</string>
+    <string name="tvizle">Tv İzle</string>
+    <string name="menu_title">TİVİBU</string>
+    <string name="open_navigation_menu_key">open_navig_menu</string>
+    <string name="close_navigation_menu_key">close_navig_menu</string>
+    <string name="gps_warnningtitle">gps veri alamadım</string>
+    <string name="gps_warnningmessage">gps hata</string>
+    <string name="gps_warnningsettingbtn">gps ayarlar</string>
+    <string name="gps_warnningcancelbtn">iptal</string>
 </resources>
