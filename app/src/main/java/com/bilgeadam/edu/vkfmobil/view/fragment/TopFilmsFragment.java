@@ -55,7 +55,9 @@ public class TopFilmsFragment extends Fragment {
 
                 TopFilmsRecyclerAdapter adapter = new TopFilmsRecyclerAdapter(allFilms,getActivity());
                 recyclerView.setAdapter(adapter);
-                //recyclerView.setLayoutManager(new LinearLayoutManager(new LinearLayout(LinearLayout.VERTICAL)));
+
+                LinearLayoutManager verticalLayoutManager = new LinearLayoutManager(getActivity(),LinearLayoutManager.VERTICAL,false);
+                recyclerView.setLayoutManager(verticalLayoutManager);
 
 
             }
