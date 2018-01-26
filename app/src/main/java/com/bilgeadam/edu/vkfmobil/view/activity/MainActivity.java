@@ -22,22 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        WebServiceSL webServiceSL = new WebServiceSL(MainActivity.this, new ServiceListener<String,WebServiceErrorModel>() {
-            @Override
-            public void OnComplete(BaseServiceInfoModel<String> onComplete) {
-                ModelParserJSON<TiviBuModel> parserJSON = new ModelParserJSON<>();
-                List<TiviBuModel> list = parserJSON.getListModelFromJSON(onComplete.getServiceResponseModel(),TiviBuModel.class);
 
-                AndroidLogger.writeLog(MainActivity.this,"test");
-
-            }
-
-            @Override
-            public void OnError(BaseServiceErrorModel onError) {
-
-            }
-        });
-        webServiceSL.getAllList();
 
     }
 }
