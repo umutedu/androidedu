@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/drawerLayout"
     tools:context="com.bilgeadam.edu.vkfmobil.view.activity.MainActivity">
 
 
@@ -20,6 +21,7 @@
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 app:layout_collapseMode="pin"
+                android:id="@+id/tabLayout"
                 android:background="@color/colorPrimary"
                 app:tabIndicatorColor="@color/colorAccent"
                 app:tabTextColor="@android:color/white"

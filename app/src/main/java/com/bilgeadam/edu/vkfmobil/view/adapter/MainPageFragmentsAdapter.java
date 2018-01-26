@@ -1,5 +1,6 @@
 package com.bilgeadam.edu.vkfmobil.view.adapter;
 
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
@@ -55,6 +56,13 @@ public class MainPageFragmentsAdapter extends FragmentStatePagerAdapter{
         }
 
 
+    }
+
+    @Nullable
+    @Override
+    public CharSequence getPageTitle(int position) {
+        TabFragmentModel fragmentModel = fragmentModels.get(position);
+        return fragmentModel.getTitle();
     }
 
     @Override

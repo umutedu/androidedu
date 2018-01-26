@@ -37,6 +37,7 @@ public class TopFilmsFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
+
         View view = inflater.inflate(R.layout.topfilms_fragment_layout,container,false);
         recyclerView = (RecyclerView)view.findViewById(R.id.top_films_fragment_recyclerView);
         initFilmsData();
@@ -58,6 +59,7 @@ public class TopFilmsFragment extends Fragment {
 
                 LinearLayoutManager verticalLayoutManager = new LinearLayoutManager(getActivity(),LinearLayoutManager.VERTICAL,false);
                 recyclerView.setLayoutManager(verticalLayoutManager);
+               adapter.notifyDataSetChanged();
 
 
             }
